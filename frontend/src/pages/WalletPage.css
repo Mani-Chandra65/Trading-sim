@@ -1,0 +1,377 @@
+.wallet-page {
+  min-height: 100vh;
+  background: #0b0e11;
+  color: #eaecef;
+  padding-bottom: 2rem;
+}
+
+.wallet-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.total-balance-card {
+  background: linear-gradient(135deg, #1e2329 0%, #2b3139 100%);
+  border: 1px solid #fcd535;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 20px rgba(252, 213, 53, 0.2);
+}
+
+.balance-icon {
+  font-size: 4rem;
+}
+
+.balance-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.balance-label {
+  color: #848e9c;
+  font-size: 0.95rem;
+}
+
+.balance-amount {
+  color: #fcd535;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.balance-note {
+  color: #848e9c;
+  font-size: 0.85rem;
+}
+
+.message-banner {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.message-banner.success {
+  background: rgba(14, 203, 129, 0.1);
+  border: 1px solid #0ecb81;
+  color: #0ecb81;
+}
+
+.message-banner.error {
+  background: rgba(246, 70, 93, 0.1);
+  border: 1px solid #f6465d;
+  color: #f6465d;
+}
+
+.wallet-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #2b3139;
+}
+
+.wallet-tabs .tab {
+  padding: 1rem 2rem;
+  background: transparent;
+  border: none;
+  color: #848e9c;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  margin-bottom: -2px;
+}
+
+.wallet-tabs .tab:hover {
+  color: #eaecef;
+}
+
+.wallet-tabs .tab.active {
+  color: #fcd535;
+  border-bottom-color: #fcd535;
+}
+
+.balance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.balance-card {
+  background: #1e2329;
+  border: 1px solid #2b3139;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s;
+}
+
+.balance-card:hover {
+  transform: translateY(-3px);
+  border-color: #fcd535;
+  box-shadow: 0 5px 20px rgba(252, 213, 53, 0.2);
+}
+
+.currency-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.currency-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #eaecef;
+}
+
+.currency-badge {
+  padding: 0.25rem 0.75rem;
+  background: #2b3139;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fcd535;
+}
+
+.currency-amount {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #eaecef;
+  margin-bottom: 1rem;
+}
+
+.currency-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.action-btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.deposit-btn {
+  background: #0ecb81;
+  color: #fff;
+}
+
+.deposit-btn:hover {
+  background: #0bb870;
+}
+
+.withdraw-btn {
+  background: transparent;
+  border: 1px solid #848e9c;
+  color: #848e9c;
+}
+
+.withdraw-btn:hover {
+  border-color: #eaecef;
+  color: #eaecef;
+}
+
+.wallet-actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.reset-btn {
+  padding: 0.75rem 2rem;
+  background: transparent;
+  border: 2px solid #f6465d;
+  color: #f6465d;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.reset-btn:hover {
+  background: #f6465d;
+  color: #fff;
+}
+
+.transaction-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.transaction-form h3 {
+  margin: 0 0 1.5rem 0;
+  color: #eaecef;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #eaecef;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.currency-select,
+.form-group input {
+  width: 100%;
+  padding: 0.875rem;
+  background: #2b3139;
+  border: 1px solid #2b3139;
+  border-radius: 8px;
+  color: #eaecef;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.currency-select:focus,
+.form-group input:focus {
+  outline: none;
+  border-color: #fcd535;
+  background: #1e2329;
+}
+
+.available-balance {
+  padding: 0.75rem;
+  background: #2b3139;
+  border-radius: 6px;
+  color: #fcd535;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.quick-amounts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.quick-amount-btn {
+  padding: 0.75rem;
+  background: #2b3139;
+  border: 1px solid #2b3139;
+  color: #848e9c;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quick-amount-btn:hover {
+  border-color: #fcd535;
+  color: #fcd535;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.submit-btn.deposit {
+  background: #0ecb81;
+  color: #fff;
+}
+
+.submit-btn.deposit:hover {
+  background: #0bb870;
+}
+
+.submit-btn.withdraw {
+  background: #f6465d;
+  color: #fff;
+}
+
+.submit-btn.withdraw:hover {
+  background: #e03d52;
+}
+
+.info-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(252, 213, 53, 0.1);
+  border: 1px solid #fcd535;
+  border-radius: 8px;
+  color: #848e9c;
+  font-size: 0.9rem;
+}
+
+.transactions-table {
+  overflow-x: auto;
+}
+
+.transactions-table .table-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 2fr;
+  padding: 1rem;
+  background: #2b3139;
+  border-radius: 8px 8px 0 0;
+  font-weight: 700;
+  color: #848e9c;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.transactions-table .table-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 2fr;
+  padding: 1rem;
+  border-bottom: 1px solid #2b3139;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.transactions-table .table-row:hover {
+  background: #2b3139;
+}
+
+@media (max-width: 768px) {
+  .wallet-container {
+    padding: 1rem;
+  }
+
+  .balance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wallet-tabs .tab {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .quick-amounts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transactions-table .table-header,
+  .transactions-table .table-row {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8rem;
+  }
+
+  .transactions-table .table-header span:nth-child(n+4),
+  .transactions-table .table-row span:nth-child(n+4) {
+    display: none;
+  }
+}

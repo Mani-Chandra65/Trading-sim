@@ -1,0 +1,112 @@
+.portfolio {
+  height: 100%;
+}
+
+.portfolio h3 {
+  margin: 0 0 1rem 0;
+  color: #eaecef;
+  font-size: 1.1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #848e9c;
+}
+
+.empty-state p {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.empty-state small {
+  font-size: 0.85rem;
+}
+
+.portfolio-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-item {
+  background: #2b3139;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.summary-item .label {
+  color: #848e9c;
+  font-size: 0.85rem;
+}
+
+.summary-item .value {
+  color: #eaecef;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.portfolio-list {
+  margin-top: 1rem;
+}
+
+.portfolio-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0.5rem;
+  color: #848e9c;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2b3139;
+}
+
+.portfolio-item {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #2b3139;
+}
+
+.portfolio-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.portfolio-row .asset {
+  color: #eaecef;
+}
+
+.portfolio-row .amount,
+.portfolio-row .avg-price,
+.portfolio-row .value {
+  color: #848e9c;
+  text-align: right;
+}
+
+.allocation-bar {
+  position: relative;
+  height: 4px;
+  background: #2b3139;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.allocation-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0ecb81, #fcd535);
+  transition: width 0.3s;
+}
+
+.allocation-text {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  font-size: 0.75rem;
+  color: #fcd535;
+}

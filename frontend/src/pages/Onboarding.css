@@ -1,0 +1,113 @@
+.onboarding-page {
+  min-height: 100vh;
+  background: #0b0e11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.onboarding-card {
+  width: min(860px, 100%);
+  background: #1e2329;
+  border: 1px solid #2b3139;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #eaecef;
+}
+
+.onboarding-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fcd535;
+}
+
+.onboarding-header p {
+  margin-top: 0.45rem;
+  color: #9aa4b2;
+}
+
+.onboarding-progress {
+  margin: 1rem 0 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.progress-dot {
+  height: 6px;
+  border-radius: 999px;
+  background: #2b3139;
+}
+
+.progress-dot.active {
+  background: #fcd535;
+}
+
+.onboarding-content h2 {
+  margin: 0 0 0.6rem;
+  color: #eaecef;
+}
+
+.onboarding-content p {
+  margin: 0 0 0.7rem;
+  color: #c7ced8;
+  line-height: 1.6;
+}
+
+.onboarding-content ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #b5beca;
+  line-height: 1.65;
+}
+
+.onboarding-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.62rem 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.action-btn.ghost {
+  background: #2b3139;
+  border-color: #3a4350;
+  color: #eaecef;
+}
+
+.action-btn.ghost:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.action-btn.primary {
+  background: #fcd535;
+  color: #0b0e11;
+}
+
+@media (max-width: 720px) {
+  .onboarding-card {
+    padding: 1rem;
+  }
+
+  .onboarding-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .onboarding-actions {
+    justify-content: stretch;
+  }
+
+  .action-btn {
+    flex: 1;
+  }
+}

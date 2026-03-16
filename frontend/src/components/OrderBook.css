@@ -1,0 +1,100 @@
+.order-book {
+  height: 100%;
+}
+
+.order-book h3 {
+  margin: 0 0 1rem 0;
+  color: #eaecef;
+  font-size: 1.1rem;
+}
+
+.orderbook-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.5rem;
+  color: #848e9c;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2b3139;
+}
+
+.asks,
+.bids {
+  margin: 0.5rem 0;
+}
+
+.order-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.375rem 0.5rem;
+  font-size: 0.85rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.order-row-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0.2;
+  transition: width 0.3s;
+}
+
+.order-row.ask .order-row-background {
+  background: #f6465d;
+}
+
+.order-row.bid .order-row-background {
+  background: #0ecb81;
+}
+
+.order-row span {
+  position: relative;
+  z-index: 1;
+}
+
+.order-row .price {
+  font-weight: 600;
+}
+
+.order-row.ask .price {
+  color: #f6465d;
+}
+
+.order-row.bid .price {
+  color: #0ecb81;
+}
+
+.order-row .amount {
+  color: #eaecef;
+  text-align: center;
+}
+
+.order-row .total {
+  color: #848e9c;
+  text-align: right;
+}
+
+.current-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+  background: linear-gradient(90deg, rgba(14, 203, 129, 0.1) 0%, rgba(246, 70, 93, 0.1) 100%);
+  border-radius: 4px;
+  border-left: 3px solid #fcd535;
+}
+
+.current-price .price-label {
+  color: #848e9c;
+  font-size: 0.85rem;
+}
+
+.current-price .price-value {
+  color: #fcd535;
+  font-size: 1.1rem;
+  font-weight: 700;
+}

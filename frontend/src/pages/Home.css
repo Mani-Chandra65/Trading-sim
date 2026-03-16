@@ -1,0 +1,343 @@
+.home {
+  min-height: 100vh;
+  background: #0b0e11;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0b0e11 0%, #1e2329 50%, #0b0e11 100%);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(252, 213, 53, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #eaecef;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+}
+
+.hero-title span {
+  background: linear-gradient(135deg, #fcd535 0%, #f0b90b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  color: #eaecef;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #848e9c;
+  margin: 0 0 3rem 0;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.demo-badge {
+  text-align: center;
+}
+
+.demo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(14, 203, 129, 0.1);
+  border: 1px solid #0ecb81;
+  border-radius: 50px;
+  color: #0ecb81;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.demo-link:hover {
+  background: rgba(14, 203, 129, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(14, 203, 129, 0.3);
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(14, 203, 129, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(14, 203, 129, 0.5);
+  }
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #fcd535 0%, #f0b90b 100%);
+  color: #0b0e11;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(252, 213, 53, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fcd535;
+  border: 2px solid #fcd535;
+}
+
+.btn-secondary:hover {
+  background: #fcd535;
+  color: #0b0e11;
+}
+
+.btn-large {
+  padding: 1.25rem 3rem;
+  font-size: 1.2rem;
+}
+
+/* Crypto Ticker */
+.crypto-ticker {
+  background: #1e2329;
+  border-top: 1px solid #2b3139;
+  border-bottom: 1px solid #2b3139;
+  padding: 1.5rem 2rem;
+  overflow-x: auto;
+}
+
+.ticker-content {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  min-width: min-content;
+}
+
+.ticker-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 120px;
+}
+
+.ticker-symbol {
+  color: #eaecef;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.ticker-price {
+  color: #eaecef;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.ticker-change {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.ticker-change.positive {
+  color: #0ecb81;
+}
+
+.ticker-change.negative {
+  color: #f6465d;
+}
+
+/* Features Section */
+.features {
+  padding: 6rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.features-header h2 {
+  font-size: 2.5rem;
+  color: #eaecef;
+  margin: 0 0 1rem 0;
+}
+
+.features-header p {
+  font-size: 1.2rem;
+  color: #848e9c;
+  margin: 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: #1e2329;
+  border: 1px solid #2b3139;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #fcd535;
+  box-shadow: 0 10px 30px rgba(252, 213, 53, 0.2);
+}
+
+.feature-card h3 {
+  color: #eaecef;
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+}
+
+.feature-card p {
+  color: #848e9c;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(135deg, #1e2329 0%, #2b3139 100%);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  color: #eaecef;
+  margin: 0 0 1rem 0;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  color: #848e9c;
+  margin: 0 0 2rem 0;
+}
+
+/* Footer */
+.footer {
+  background: #1e2329;
+  border-top: 1px solid #2b3139;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer p {
+  color: #848e9c;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-disclaimer {
+  font-size: 0.85rem;
+  color: #5e6673;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .ticker-content {
+    justify-content: flex-start;
+  }
+
+  .features {
+    padding: 4rem 1rem;
+  }
+
+  .features-header h2 {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    padding: 3rem 1rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}

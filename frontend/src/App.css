@@ -1,0 +1,28 @@
+.App {
+  min-height: 100vh;
+  background: #0b0e11;
+}
+
+.loading-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b0e11;
+}
+
+.loading-spinner {
+  color: #fcd535;
+  font-size: 1.2rem;
+  font-weight: 600;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
